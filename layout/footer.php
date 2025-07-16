@@ -1,19 +1,14 @@
+<!-- /.content-wrapper -->
 <footer class="main-footer">
-  <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
-  All rights reserved.
-  <div class="float-right d-none d-sm-inline-block">
-    <b>Version</b> 3.2.0
-  </div>
-</footer>
+  </footer>
 
-<!-- Control Sidebar -->
-<aside class="control-sidebar control-sidebar-dark">
-  <!-- Control sidebar content goes here -->
-</aside>
-<!-- /.control-sidebar -->
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
-
 
 <!-- jQuery UI 1.11.4 -->
 <script src="assets-template/plugins/jquery-ui/jquery-ui.min.js"></script>
@@ -44,9 +39,25 @@
 <!-- AdminLTE App -->
 <script src="assets-template/dist/js/adminlte.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="dist/js/demo.js"></script>
+<script src="assets-template/dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="assets-template/dist/js/pages/dashboard.js"></script>
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!-- asset plugin datatables -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
+<script src="https://cdn.datatables.net/2.0.8/js/dataTables.bootstrap5.js"></script>
+
+<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+
+<script src="https://cdn.ckeditor.com/4.24.0-lts/standard/ckeditor.js"></script>
+
+
 
 <!-- DataTables  & Plugins -->
 <script src="assets-template/plugins/datatables/jquery.dataTables.min.js"></script>
@@ -55,39 +66,60 @@
 <script src="assets-template/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
 <script src="assets-template/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
 <script src="assets-template/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="assets-template/plugins/jszip/jszip.min.js"></script>
+<script src="assets-template/plugins/pdfmake/pdfmake.min.js"></script>
+<script src="assets-template/plugins/pdfmake/vfs_fonts.js"></script>
 <script src="assets-template/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
 <script src="assets-template/plugins/datatables-buttons/js/buttons.print.min.js"></script>
 <script src="assets-template/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+<!-- asset plugin datatables -->
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="https://cdn.datatables.net/2.2.1/js/dataTables.js"></script>
+<script src="https://cdn.datatables.net/2.2.1/js/dataTables.bootstrap5.js"></script>
 
+<script src="https://cdn.ckeditor.com/4.25.0-lts/standard/ckeditor.js"></script>
+<script>
+    CKEDITIOR.replace('alamat');
+</script>
+
+<!-- load fontawesome cdn -->
 <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
-  integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
-
-<script src="https://cdn.ckeditor.com/4.19.0/full/ckeditor.js"></script>
+    integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+    crossorigin="anonymous"></script>
 
 <script>
-  $(function () {
-    $('#example2').DataTable();
+  CKEDITOR.replace('alamat', {
+    filebrowserBrowseUrl: 'assets-template/ckfinder/ckfinder.html',
+    filebrowserUploadUrl: 'assets-template/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+    height: '400px'
   });
 </script>
-<script>
-        CKEDITOR.replace('alamat', {
-            filebrowserBrowseUrl: 'assets/ckfinder/ckfinder.html',
-            filebrowserUploadUrl: 'assets/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
-            height: '400px'  
-        });
-    </script>
 
+<!-- DataTables Serverside -->
 <script>
-    $(document).ready(function () {
-        $('#example').DataTable();
+  $(document).ready(function () {
+    $('#serverside').DataTable({
+      processing: true,
+      serverSide: true,
+      ajax: {
+        url: "mahasiswa-serverside.php?action=table_data",
+        dataType: "json",
+        type: "POST"
+      },
+      columns: [
+        { "data": "no" },
+        { "data": "nama" },
+        { "data": "prodi" },
+        { "data": "jk" },
+        { "data": "telepon" },
+        { "data": "aksi" }
+      ]
     });
+  });
 </script>
 </body>
-
 </html>
