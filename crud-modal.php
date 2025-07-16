@@ -48,6 +48,8 @@ if (isset($_POST['ubah'])) {
 }
 ?>
 
+<div class="content-wrapper">
+<section class="content">
 <div class="container mt-5">
     <h1>Data Akun</h1>
     <hr>
@@ -219,6 +221,8 @@ if (isset($_POST['ubah'])) {
                 </div>
             </div>
         </div>
+    </div>
+    </section>
     </div>
 <?php endforeach; ?>
 
